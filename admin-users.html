@@ -46,17 +46,23 @@
         Barangay: Unknown
       </div>
     </div>
-      <a href="{% url 'admin' %}" class="{% if request.path == '/admin.html' %}active{% endif %}">
-        <i class="bi bi-speedometer2 me-2"></i>Dashboard
-      </a>
-
-      <a href="{% url 'admin_complaints' %}" class="{% if request.path == '/admin-complaints/' %}active{% endif %}">
-        <i class="bi bi-file-earmark-text me-2"></i>Complaints
-      </a>
-
-      <a href="{% url 'admin_users' %}" class="{% if request.path == '/admin-users/' %}active{% endif %}">
-        <i class="bi bi-people me-2"></i>Users
-      </a>
+      <a href="admin.html" class="active">
+          <i class="bi bi-speedometer2 me-2"></i>Dashboard
+        </a>
+        <a href="admin-complaints.html" class="">
+          <i class="bi bi-file-earmark-text me-2"></i>Complaints
+        </a>
+        <a href="admin-users.html" class="">
+          <i class="bi bi-people me-2"></i>Users
+        </a><a href="admin.html" class="active">
+          <i class="bi bi-speedometer2 me-2"></i>Dashboard
+        </a>
+        <a href="admin-complaints.html" class="">
+          <i class="bi bi-file-earmark-text me-2"></i>Complaints
+        </a>
+        <a href="admin-users.html" class="">
+          <i class="bi bi-people me-2"></i>Users
+        </a>
 
       <a href="#" data-bs-toggle="modal" data-bs-target="#logoutModal" class="mt-auto text-danger">
       <i class="bi bi-box-arrow-right me-2"></i>Logout</a>
